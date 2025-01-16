@@ -1,2 +1,0 @@
-Tshirt,Kıyafet,235.0,2
-Kazak,Kıyafet,241.0,4
