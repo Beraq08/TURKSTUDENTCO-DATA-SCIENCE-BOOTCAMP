@@ -1,0 +1,2 @@
+Kazak,Kiyafet,235.0,2
+Mont,Kiyafet,666.0,1
