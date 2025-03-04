@@ -1,0 +1,54 @@
+﻿3. Görevler
+
+
+Aşağıda belirtilen SQL sorgularını yazın ve her biri için kısa açıklamalar ekleyin.
+
+
+a. Belirli Kolonları Seçme
+Çalışanların sadece FirstName, LastName ve Salary bilgilerini getiren bir SQL sorgusu yazınız.
+
+
+select FirstName, LastName ,Salary  – İstenen kolonlar select ile çağrılır
+From employees –  Hangi tablodan veri çağrılıyorsa o yazılır
+
+
+
+
+b. DISTINCT Komutu ile Tekrarları Önleme
+Çalışanların çalıştıkları departmanları benzersiz olarak listeleyen bir SQL sorgusu yazınız.
+
+
+select DISTINCT DepartmentID – Dıstınct sayesinde benzersiz olarak çağrılır
+From  employees 
+
+
+
+
+c. Belirli Bir Departmana Ait Çalışanları Listeleme
+Sadece IT departmanında çalışanların bilgilerini getiren bir SQL sorgusu yazınız.
+
+
+SELECT *   – “ * “ ile tüm kolonları çağırırız
+FROM Employees
+Where departmentid = '1' – Where koşulu ile It departmanında olanlar çağrılır
+
+
+
+
+d. Maaşa Göre Sıralama
+Çalışanları maaşlarına göre büyükten küçüğe sıralayan bir SQL sorgusu yazınız.
+
+
+SELECT *
+FROM Employees
+Order By salary Desc  – Order By komutu ile istenen kolona göre sıralanır Desc = Azalan sırada  Asc = Artan sırada
+
+
+
+
+e. Kolonları Birleştirme (Concatenation)
+Çalışanların FirstName ve LastName alanlarını birleştirerek, tam adlarını içeren yeni bir kolon oluşturan bir SQL sorgusu yazınız.
+
+
+SELECT firstname || ' ' || lastname as fullname   – || ' ' || bu komut sayesinde kolonları birleştirerek tek kolonda gösterebiliriz ‘ ’ içine koyduğumuz karakteri kolonlar arasında kullanır. as komutu ile yeni oluşan kolona isim verilir
+FROM Employees
